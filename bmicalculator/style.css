@@ -1,0 +1,59 @@
+caption {
+   background-color: turquoise;
+   text-align: left;
+   border: solid white;
+   padding-left: 5px;
+   margin-left: none;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+div {
+    text-align: center;
+    display: inline-block;
+    border: white solid;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    text-align: left;
+    margin-left: none;
+    border-top: solid white;
+    border-collapse: collapse;
+    border-bottom: none;
+    
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#attribute {
+background-color: turquoise;
+padding-right: 20px;
+padding-left: 5px;
+}
+
+td {
+        margin: 0;
+        padding: 20px;
+}
+
+#button{
+    border: none;
+    padding-bottom: 10px;
+}
+
+#classification{
+    margin-top: 20px;
+    border: solid white;
+}
+
+th {
+    background-color: turquoise;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

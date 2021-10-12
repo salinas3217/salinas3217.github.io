@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <!--BMI Calculator-->
+        <form>
+            <div id="container">
+                <table>
+                    <caption>BMI Calculator</caption>
+                    <tr><td id="attribute">Height:</td><td> <label for="feet">Feet:</label><br>
+                    <input type="number" name="feet" id="feet"></td><td><label for="inches">Inches:</label><br>
+                    <input type="number" name="inches" id="inches"></td></tr>
+
+                    <tr><td id="attribute">Weight:</td><td> <label for="pounds">Pounds:</label><br>
+                    <input type="number" name="pounds" id="pounds"></td><td><label for="bmi">BMI</label><br>
+                    <input type="number" name="user-bmi" id="user-bmi" value="" disabled></td></tr>
+                </table>
+
+                <div id="button">
+                <input type="button" value="Calculate Body Mass Index" onclick="calculate()"><br><br>
+                <label for="formula" id="bmilabel" ><span id="user-bmi-classification">BMI = (weight / height in inches * height in inches) * 703</span></label>
+                </div>
+            </div>
+        </form>
+        
+        <!--BMI Classifications-->
+            <table id="classification">
+                <tr><th>BMI</th><th>Weight Status</th></tr>
+                <tr><td>Below 18.5</td><td>Underweight</td></tr>
+                <tr><td>18.5 - 24.9</td><td>Normal or Healthy Weight</td></tr>
+                <tr><td>25.0 - 29.9</td><td>Over Weight</td></tr>
+                <tr><td>30.0 and above</td><td>Obese</td></tr>
+            </table>
+        
+
+
+    </body>
+</html>
