@@ -1,0 +1,68 @@
+.banner {
+    background-image: url(images/background1.jpg);
+    text-shadow: 1px 1px 1px black;
+    color: black;
+    font-size: large;
+    margin-top: 80px;
+    background-color: whitesmoke;
+}
+
+#logo {
+    height: 60px;
+}
+
+#carousel {
+    height: 600px;
+    width: 1000px;
+    align-items: center;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-color: grey;
+    margin-top: 0px;
+    padding-top: 0px;
+    color: whitesmoke;
+}
+
+#hours {
+    text-align: center;
+    margin: auto;
+}
+
+#hours-table, #phone, #address {
+    text-align: center;
+    display: block;
+}
+
+td {
+    padding-right: 20px;
+}
+
+#hours-operation {
+    padding-top: 40px;
+    font-size: x-large;
+}
+
+.col img{
+    width: 300px;
+    height: 300px;
+}
+
+#products {
+    margin-bottom: 40px;
+}
+
+table, td, th {
+    color: whitesmoke;
+}
+
+#contact-us-form, h1 {
+    text-align: center;
+    display: block;
+}
+
+#about-us img {
+    width: 400px;
+    height: 400px
+}

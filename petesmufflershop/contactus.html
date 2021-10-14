@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pete's Muffler Shop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="code.js"></script>
+    </head>
+
+    <body onload="updateCheckout();">
+        <!--Jumbotron-->
+        <div class="jumbotron text-center banner">
+            <h1>Pete's Muffler Shop</h1>
+            <p>Family owned and operated for 40 years.</p>
+          </div>
+
+          <!--NavBar-->
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="index.html"><span><img src="images/logo.jpg" class="rounded" id="logo"></span></a>
+            <a id="cart-link" class="navbar-brand" href="cart.html">Checkout(0)</a>
+            
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <section>
+            <h1>Ask a Qustion</h1>
+              <form action="actionpage.php" method="GET" target="_blank">
+                  <div id="contact-us-form">
+                          
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" name="firstName" value=""><br>
+    
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" id="lastName" name="lastName" value=""><br>
+    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                      <fieldset>
+                        <legend>Questions About</legend>
+                        <input type="checkbox" id="tires" name="tires" value="tires">
+                        <label for="tires">Tires  </label>
+    
+                        <input type="checkbox" id="breaks" name="breaks" value="breaks">
+                        <label for="breaks">Breaks  </label>
+    
+                        <input type="checkbox" id="mufflers" name="mufflers" value="mufflers">
+                        <label for="mufflers">Mufflers  </label>
+    
+                        <input type="checkbox" id="welding" name="welding" value="welding">
+                        <label for="welding">Welding  </label>
+
+                        <input type="checkbox" id="other" name="other" value="other">
+                        <label for="other">Other  </label>
+                    </fieldset>
+                    <label for="question">Type Your Question</label><br>
+                <textarea for="question" id="question" rows="10" cols="30">
+                  
+
+                </textarea><br>
+                <input class="btn btn-danger btn-lg" type="submit" value="click to submit"><input class="btn btn-danger btn-lg" type="reset" value="reset form">
+                  </div>
+              </form>
+          </section>
+    </body>
